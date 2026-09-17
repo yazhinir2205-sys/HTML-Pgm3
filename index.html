@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Basic CSS Selectors</title>
 
     <style>
-        /* Write your CSS here */
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
 
+        /* Element Selector */
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* ID Selector */
+        #heading {
+            color: red;
+        }
+
+        /* Class Selector */
+        .info {
+            color: green;
+            font-size: 18px;
+        }
+
+        /* Grouping Selector */
+        h2, p {
+            margin: 10px;
+        }
     </style>
-
 </head>
 
 <body>
 
-     /* Write your html code to structure your web page here */
+    <h1 id="heading">Basic CSS Selectors</h1>
+
+    <h2>Element Selector Example</h2>
+
+    <p class="info">
+        This paragraph uses the <strong>class selector</strong>.
+    </p>
+
+    <p>
+        This paragraph is styled using the <strong>grouping selector</strong>.
+    </p>
 
 </body>
+
 </html>
